@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="app">
+        <input type="text" id="searchBar" placeholder="Search music...">
+        <div id="playlist">
+            <!-- Playlist items will be dynamically generated here -->
+        </div>
+        <div id="playerControls">
+            <button id="previous"><i class="fa-solid fa-backward" style="color: #74C0FC;"></i></button>
+            <button id="playPause"><i id="icon" class="fa-solid fa-play" style="color: #74C0FC;"></i></button>
+            <button id="skip"><i class="fa-solid fa-forward" style="color: #74C0FC;"></i></button>
+            <i id="volumeIcon" class="fa-solid fa-volume-up"></i>
+            <input type="range" id="volumeControl" min="0" max="100" value="50">
+        </div>
+        <input type="range" id="trackProgress" min="0" max="100" value="0">
+        <div id="nowPlaying">
+            <p>Now Playing: <span id="currentTrack">None</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

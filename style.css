@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+#app {
+    max-width: 500px;
+    margin: 155px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#searchBar {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#playlist {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#playlist div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#playlist div:hover {
+    background-color: #f0f0f0;
+}
+
+#playerControls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: auto 15%;
+    margin-bottom: 17px;
+}
+
+#playerControls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #74C0FC;
+    transition: color 0.3s;
+    padding: 0px;
+}
+
+#playerControls button:hover {
+    color: #0056b3;
+}
+
+#volumeControl, #trackProgress {
+    -webkit-appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+#volumeControl:hover, #trackProgress:hover {
+    opacity: 1;
+}
+
+#volumeControl::-webkit-slider-thumb, #trackProgress::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+    background: #74C0FC;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#volumeControl::-moz-range-thumb, #trackProgress::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #74C0FC;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#trackProgress {
+    margin: auto 4%;
+    width: 469px;
+    margin-bottom: 36px;
+}
+
+#nowPlaying {
+    text-align: center;
+    font-size: 18px;
+}
+
+#nowPlaying p {
+    margin: 0;
+}
+
+#playPause {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#volumeIcon {
+    font-size: 24px;
+    color: #74C0FC;
+    margin-right: 10px;
+}
